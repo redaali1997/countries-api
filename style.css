@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --color-primary: #3560E2
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'open sans';
+}
+
+body {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#searchInput {
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    width: 75%;
+    padding: 5px 5px;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchBtn {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #2a4eb9;
+}
+
+#error {
+    color: red;
+    display: block;
+    font-size: 13px;
+}
+
+#result {
+    line-height: 1.3em;
+    font-size: 18px;
+}
+
+#result span {
+    color: rgb(104, 104, 104);
+}
+
+#content {
+    line-height: 2.5;
+}
+
+#nameFlag {
+    margin: 40px auto;
+    line-height: 3em;
+}
+
+#countryImg {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+#countryName {
+    text-align: center;
+}
