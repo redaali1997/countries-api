@@ -8,6 +8,7 @@ container = document.querySelector('.container');
 searchForm.addEventListener('submit', function (e) {
     e.preventDefault();
     userInput = searchInput.value;
+    userInput = userInput.trim()
     if (userInput) {
         fetch(`https://restcountries.com/v3.1/name/${userInput}?fullText=true`)
         .then((response) => response.json())

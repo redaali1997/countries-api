@@ -89,3 +89,19 @@ body {
 #countryName {
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .formInputs{
+        flex-direction: column;
+    }
+    #searchInput {
+        width: 100%;
+    }
+    #searchBtn{
+        margin-top: 20px;
+        width: 100%;
+    }
+    #content {
+        line-height: 1.5em;
+    }
+}
